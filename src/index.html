@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>listen to me.</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="header">listen to me.</p>
+            <div class="settings">
+                <div class="language">
+                    <p>Language: </p>
+                        <select id="language"></select>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+                <button class="button record">
+                    <div class="icon">
+                        <i class='bx bxs-microphone'></i>
+                        <i class='bx bx-loader-alt bx-spin' ></i>
+                    </div>
+                    <p>Start listening</p>
+                </button>
+            
+                <p>Result: </p>
+                <div class="result" spellcheck="false">
+                    <p class="resultText"></p>
+                </div>
+                
+                <div class="separator"></div>
+
+                <div class="buttons">
+                    <button class="button clear">Clear</button>
+                    <button class="button download" disabled>Download</button>
+                </div>
+
+            </div>
+
+
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

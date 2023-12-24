@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Lora&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5a514b;
+    border: none;
+}
+
+.container {
+    width: 400px;
+    background-color: rgb(168, 255, 230);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.container .header {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.container .settings {
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.container .settings select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.container .separator {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    opacity: 10;
+    border-radius: 5%;
+    margin: 20px 0;
+
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 20px;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    cursor: pointer;
+    color: white;
+    background: #494442;
+}
+
+.button i {
+    font-size: 27px;
+}
+
+.button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.container .record .bx-spin {
+    display: none;
+}
+
+.container .record.recording .bx-spin {
+    display: block;
+}
+
+.container .record.recording i {
+    display: none;
+}
+
+.container .result {
+    width: 100%;
+    border: 1px solid;
+    height: 120px;
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 10px 0 20px;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+    border-color: white;
+}
+
+.container .result p {
+    display: flex;
+    margin-left: 5px;
+    color: black;
+}
+
+.buttons .button{
+    margin-bottom: 10px;
+}
